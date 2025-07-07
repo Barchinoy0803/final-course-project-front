@@ -1,0 +1,20 @@
+.navigation-link.active{
+    color: #000;
+}
+.navigation-link.active::before{
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+
+    width: 0%;
+    height: 3px;
+    background: #000;
+    border-radius: 5px;
+    animation: navigation-link .25s ease-out    forwards;
+}
+@keyframes navigation-link {
+    to{
+        width: 100%;
+    }
+}
